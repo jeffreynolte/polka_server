@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120810222810) do
+ActiveRecord::Schema.define(:version => 20120823154600) do
 
   create_table "photos", :force => true do |t|
     t.string   "url"
@@ -19,8 +19,9 @@ ActiveRecord::Schema.define(:version => 20120810222810) do
     t.string   "udid"
     t.string   "latitude"
     t.string   "longitude"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.boolean  "public",      :default => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
 end

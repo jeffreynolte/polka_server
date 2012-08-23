@@ -9,7 +9,8 @@ class PhotosController < ApplicationController
         :facebook_id => params[:facebook_id],
         :udid        => params[:udid],
         :latitude    => params[:latitude],
-        :longitude   => params[:longitude]
+        :longitude   => params[:longitude],
+        :public      => params[:public]
       )
       
       render(:text => "ok") and return
