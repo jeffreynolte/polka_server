@@ -6,6 +6,7 @@ class PhotosController < ApplicationController
       
       p = Photo.create(
         :url         => params[:url],
+        :email       => params[:email],
         :facebook_id => params[:facebook_id],
         :udid        => params[:udid],
         :latitude    => params[:latitude],
